@@ -1,9 +1,7 @@
 # summary.py
 
 def dataset_summary(data):
-    """
-    Returns basic summary of dataset.
-    """
+    
     total_records = len(data)
     unique_patients = len(set([row["patient_nbr"] for row in data]))
     unique_hospitals = len(set([row["admission_type_id"] for row in data]))
