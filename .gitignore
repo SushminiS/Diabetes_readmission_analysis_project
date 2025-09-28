@@ -1,0 +1,7 @@
+# Ignore dataset files
+data/IDS_mapping.csv
+
+
+reports/analysis_report.txt
+
+
