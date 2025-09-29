@@ -5,6 +5,8 @@ from summary import dataset_summary
 from analysis import readmission_stats, average_stay, filter_by_medication
 from utils import save_report
 
+
+
 def main():
     filepath = "data/diabetic_data.csv"
     
@@ -33,6 +35,8 @@ def main():
    
     full_report = {**summary, **read_stats, "Average Stay": avg_stay, "Insulin Patients": len(insulin_patients)}
     save_report(full_report, "analysis_report.txt")
+
+
 
 if __name__ == "__main__":
     main()
